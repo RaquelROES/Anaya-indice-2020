@@ -9,16 +9,16 @@
 	AnayaIndice2020.prototype = {
 		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
 		parent: blink.theme.styles.basic.prototype,
-		bodyClassName: 'content_type_clase_anaya',
+		bodyClassName: 'content_type_clase_AnayaIndice2020',
 		toolbar: { name: 'editorial', items: ['Blink_wrapper', 'Blink_aside', 'Blink_custom_lists', 'Blink_simple_grid'] },
 		extraPlugins: ['image2', 'blink_wrapper', 'blink_aside', 'blink_custom_lists', 'blink_simple_grid'],
 		ckEditorStyles: {
-			name: 'anaya',
+			name: 'AnayaIndice2020',
 			styles: [
-				{ name: 'subtitle', element: 'h4', attributes: { 'class': 'anaya-subtitle'} },
-				{ name: 'header', element: 'h6', attributes: { 'class': 'anaya-header'} },
-				{ name: 'competencias subtitle', element: 'h6', attributes: { 'class': 'anaya-competencias-subtitle'} },
-				{ name: 'ejercicio', element: ['p', 'li'], attributes: { 'class': 'anaya-exercise' } },
+				{ name: 'subtitle', element: 'h4', attributes: { 'class': 'AnayaIndice2020-subtitle'} },
+				{ name: 'header', element: 'h6', attributes: { 'class': 'AnayaIndice2020-header'} },
+				{ name: 'competencias subtitle', element: 'h6', attributes: { 'class': 'AnayaIndice2020-competencias-subtitle'} },
+				{ name: 'ejercicio', element: ['p', 'li'], attributes: { 'class': 'AnayaIndice2020-exercise' } },
 
 				{ name: 'box-center', type: 'widget', widget: 'blink_wrapper', attributes: { 'class': 'center' } },
 				{ name: 'aside-right', type: 'widget', widget: 'blink_aside', attributes: { 'class': 'right' } },
@@ -154,7 +154,7 @@
 					'</div>';
 
 			$navbarBottom
-				.attr('class', 'anaya-navbar')
+				.attr('class', 'AnayaIndice2020-navbar')
 				.wrapInner('<div class="navbar-content"></div>')
 				.find('ol')
 					.before(dropDown)
@@ -184,7 +184,7 @@
 
 	AnayaIndice2020.prototype = _.extend({}, new blink.theme.styles.basic(), AnayaIndice2020.prototype);
 
-	blink.theme.styles['anaya_indice_2020'] = AnayaIndice2020;
+	blink.theme.styles['AnayaIndice2020_indice_2020'] = AnayaIndice2020;
 
 
 })( blink );
